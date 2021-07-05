@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-function Header() {
+function Heading() {
    // const header = document.createElement("h1");
    // header.textContent = "Hello World!";
 
@@ -10,6 +10,14 @@ function Header() {
    return <h1>Hello World!</h1>;
 }
 
+function App() {
+   return (
+      <div>
+         <Heading />
+         <p>Welcome to our app</p>
+      </div>
+   );
+}
 const container = document.getElementById("root");
 // container.appendChild(Header());
-ReactDOM.render(Header(), container);
+ReactDOM.render(<App />, container);
