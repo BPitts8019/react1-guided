@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactDOM from "react-dom";
 
 function Heading() {
@@ -11,10 +11,17 @@ function Heading() {
 }
 
 function App() {
+   const [count, setCount] = useState(0);
+
+   setTimeout(() => {
+      setCount(20);
+      console.log(`count: ${count}`);
+   }, 2000);
+
    return (
       <div>
          <Heading />
-         <p>Welcome to our app</p>
+         <p>Current count: {count}</p>
       </div>
    );
 }
