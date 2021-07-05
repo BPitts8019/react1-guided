@@ -6,7 +6,8 @@ function Header() {
    // header.textContent = "Hello World!";
 
    // return header;
-   return React.createElement("h1", null, "Hello World!");
+   // return React.createElement("h1", null, "Hello World!");
+   return <h1>Hello World!</h1>;
 }
 
 const container = document.getElementById("root");
